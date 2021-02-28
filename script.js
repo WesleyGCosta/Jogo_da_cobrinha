@@ -47,10 +47,12 @@ function iniciarJogo() {
 
     for(i = 1; i < snake.length; i++)
     {
+        let contador = 0;
+        contador++;
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y)
         {
             clearInterval(jogo);
-            alert('Game Over :(');
+            alert('Game Over :(' + contador + " pontos");
         }
     }
 
